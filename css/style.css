@@ -1,0 +1,285 @@
+body {
+  background-color: aquamarine;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.headerPrincipal {
+  padding: 20px 0;
+  background-color: #fff;
+}
+
+.container {
+  width: 94%;
+  margin: 0 auto;
+  border: 2px solid;
+}
+
+.titulos {
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: bisque;
+}
+
+.formatoAlContenedor{
+    width: 94%;
+    margin: 0 auto;
+}
+
+.imgcar{
+    width: 100px;
+    height: 100px;
+    border-radius: 15%;
+    padding: 3px;
+    border-color: red;
+}
+
+.containerFlex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h3{
+    position: absolute;
+    background-color: bisque;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 392px;
+    visibility: hidden;
+    opacity: 0.8;
+}
+
+
+.texto{
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.elementsCont{
+    display: flex;
+    width: 31%;
+    border: 3px solid;
+    margin: 3px;
+    height: 400px;
+    position: relative;
+}
+
+.elementsCont:hover h3{
+    visibility: visible;
+}
+
+.primero{
+    justify-content: flex-end;
+}
+
+.segundo{
+    justify-content: flex-start;
+}
+
+.tercero{
+    justify-content: center;
+}
+
+.cuarto{
+    justify-content: space-around;
+}
+
+.quinto{
+    justify-content: space-between;
+}
+
+/*******Items propiedades**********/
+.containeritems{
+    display: flex;
+    flex-wrap: wrap;
+}
+.elements{
+    display: flex;
+    width: 31%;
+    border: 3px solid;
+    margin: 3px;
+    height: 400px;
+    position: relative;
+}
+
+.elements:hover h3{
+    visibility: visible;
+}
+
+.first{
+    align-items: flex-end;
+}
+
+.second{
+    align-items: center;
+    justify-content: center;
+}
+
+.third{
+    align-items: flex-start;
+}
+
+.fourth{
+ align-items: baseline;
+}
+
+.fiveth{
+    align-items: stretch;
+}
+
+.sixth img:nth-child(2){
+    align-self: end;
+}
+
+.elements div:nth-child(1){
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+    background-color: black;
+    color: #fff;
+}
+
+.elements div:nth-child(2){
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+    background-color: blueviolet;
+    color: black;
+}
+
+.elements div:nth-child(3){
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+    background-color: bisque;
+    color: black;
+}
+
+.elements div:nth-child(4){
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+    background-color: blue;
+    color: black;
+}
+
+.elements div:nth-child(5){
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+    background-color: brown;
+    color: black;
+}
+
+.elements:nth-child(7) div:nth-child(3){
+    order: -1;
+}
+
+.elements:nth-child(8) div:nth-child(1){
+    order: 1;
+}
+
+
+/*******Formatos de direccion para los elementos*******/
+.elementsFormat{
+    display: flex;
+    width: 31%;
+    margin: 3px;
+    height: 400px;
+    border: 3px solid;
+    position: relative;
+}
+
+.elementsFormat:hover h3{
+    visibility: visible;
+}
+
+.elementsFormat:nth-child(1){
+    flex-direction: row;
+}
+
+.elementsFormat:nth-child(2){
+    flex-direction: row-reverse;
+}
+
+.elementsFormat:nth-child(3){
+    flex-direction: column;
+}
+
+.elementsFormat:nth-child(4){
+    flex-direction: column-reverse;
+}
+
+/*******Formatos de wrap, wrap-reverse, nowrap*******/
+
+.elementsFormat:nth-child(5){
+    flex-wrap: wrap;
+}
+
+.elementsFormat:nth-child(6){
+    flex-wrap: wrap-reverse;
+}
+
+.elementsFormat:nth-child(7){
+    flex-wrap: nowrap;
+}
+
+.elementsFormat:nth-child(8){
+    margin-left: 100px;
+    flex-flow: column wrap;
+}
+
+
+
+/*******Usando align-content que modifica tanto el contenedor como items******/
+.elementsAll{
+    display: flex;
+    width: 31%;
+    margin: 3px;
+    height: 400px;
+    border: 3px solid;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.elementsAll:hover h3{
+    visibility: visible;
+}
+
+.imgcar2{
+    width: 70px;
+    height: 70px;
+    border-radius: 15%;
+    padding: 2px;
+    border-color: red;
+    margin: 2px;
+}
+
+.elementsAll:nth-child(1){
+    align-content: flex-start;
+}
+
+.elementsAll:nth-child(2){
+    align-content: flex-end;
+}
+
+.elementsAll:nth-child(3){
+    align-content: center;
+}
+
+.elementsAll:nth-child(4){
+    align-content: space-between;
+}
+
+.elementsAll:nth-child(5){
+    align-content: space-around;
+}
+
+.elementsAll:nth-child(6){
+    align-content: stretch;
+}
